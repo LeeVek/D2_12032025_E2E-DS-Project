@@ -7,3 +7,5 @@
 CI/CD Pipeline - GitHub
 AWS Deployment
 https://github.com/LeeVek/D2_12032025_E2E-DS-Project
+
+conda create -p venv python==3.8 -y 
