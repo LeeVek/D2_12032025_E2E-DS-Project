@@ -7,11 +7,3 @@
 CI/CD Pipeline - GitHub
 AWS Deployment
 https://github.com/LeeVek/D2_12032025_E2E-DS-Project
-
-conda create -p venv python==3.8 -y 
-
-# GitHub
-Press i to enter INSERT mode.
-Type your commit message (e.g., Updated SetUp.txt with new instructions).
-Press Esc to exit INSERT mode.
-Type :wq and press Enter to save and exit.

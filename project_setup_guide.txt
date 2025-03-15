@@ -1,0 +1,126 @@
+# 🚀 Project Setup Guide
+
+## 1️⃣ Conda Environment Setup  
+# Create a Python virtual environment  
+conda create -p venv python==3.8 -y  
+
+# Activate the environment  
+conda activate ./venv  
+
+# Install required dependencies (if applicable)  
+pip install -r requirements.txt  
+
+---
+
+## 2️⃣ GitHub Setup  
+
+### 🔹 Check if Git is Installed  
+git --version  
+
+### 🔹 Configure Git (If Not Set Up)  
+git config --global user.name "Your Name"  
+git config --global user.email "your-email@example.com"  
+
+### 🔹 Clone an Existing GitHub Repo  
+git clone https://github.com/your-username/your-repo.git  
+cd your-repo  # Open the cloned folder  
+code .        # Open in VS Code  
+
+### 🔹 Create a New Git Repo from VS Code  
+git init  
+
+---
+
+## 3️⃣ Project Structure  
+
+project-folder/
+│── venv/               # Virtual environment  
+│── src/                # Source code directory  
+│── data/               # Data files (if needed)  
+│── notebooks/          # Jupyter notebooks (if applicable)  
+│── tests/              # Unit tests  
+│── requirements.txt    # Python dependencies  
+│── README.md           # Project documentation  
+│── .gitignore          # Git ignore file  
+
+---
+
+## 4️⃣ Branch Management  
+
+### 🔹 Check Current Branch  
+git branch  # Lists all local branches, marks the current branch with *  
+
+### 🔹 Rename `master` to `main` (If Needed)  
+git branch -m master main  
+git push -u origin main  
+
+### 🔹 Create and Switch to a New Branch  
+git branch new-branch-name  # Create a new branch  
+git checkout new-branch-name  # Switch to the new branch  
+git checkout -b new-branch-name  # Create and switch to a new branch in one step  
+
+### 🔹 View Branches  
+git branch -r  # List remote branches  
+git branch -a  # List all branches (local + remote)  
+
+---
+
+## 5️⃣ Merging and Deleting Branches  
+
+### 🔹 Merge a Feature Branch into `main`  
+git checkout main  # Switch to main  
+git pull origin main  # Pull the latest changes  
+git merge new-branch-name  # Merge the feature branch  
+git push origin main  # Push the updated main to GitHub  
+
+### 🔹 Delete Branches  
+git branch -d branch-name  # Delete a local branch (after merging)  
+git push origin --delete branch-name  # Delete a remote branch on GitHub  
+
+---
+
+## 6️⃣ Committing and Pushing Changes  
+git add .  
+git commit -m "Initial commit"  
+git remote add origin https://github.com/your-username/your-repo.git  
+git push -u origin main  
+git push -u origin new-branch-name  # Push a new branch to GitHub  
+
+---
+
+## 7️⃣ Additional Project Setup  
+
+### 🔹 Install Required Python Packages  
+# Create a requirements.txt file  
+echo "numpy==1.21.0  
+pandas==1.3.0  
+scikit-learn==0.24.2  
+matplotlib==3.4.2" > requirements.txt  
+
+# Install dependencies  
+pip install -r requirements.txt  
+
+### 🔹 Set Up a Jupyter Notebook (If Needed)  
+pip install jupyter  
+jupyter notebook  
+
+### 🔹 Create a `.gitignore` File  
+# Add the following lines to exclude unnecessary files  
+echo "venv/  
+__pycache__/  
+*.pyc  
+.DS_Store  
+.ipynb_checkpoints/  
+.env" > .gitignore  
+
+---
+
+## 8️⃣ Using Git Commit in Vim  
+1️⃣ Press `i` to enter INSERT mode.  
+2️⃣ Type your commit message (e.g., `Updated SetUp.txt with new instructions`).  
+3️⃣ Press `Esc` to exit INSERT mode.  
+4️⃣ Type `:wq` and press Enter to save and exit.  
+
+---
+
+
